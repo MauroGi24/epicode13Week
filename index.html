@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <title>Pc Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container-fluid justify-content-between">
+            <img src="./assets/IMG/logo.png" alt="logo Pc Shop">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./backend.html">Carica prodotti</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">Il tuo carrello</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2>Utlimi prodotti</h2>
+    <main >
+        
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="d-flex mb-5">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Cerca il tuo brand" aria-label="Search">
+                    <button onclick="search()">Cerca</button>
+                    <button onclick="cancellaRicerca()">Cancella Ricerca</button>
+                  </div>
+                <div id="prodotti" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                  </svg></a>
+            </p>
+            <p class="mb-1">Pc Shop srl</p>
+            <p class="mb-1">Via Nessuno 6 - 20133 - Milano</p>
+            <p class="mb-0">P. IVA 123456789</p>
+        </div>
+    </footer>
+    <div id="modalCanc" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="modalTitle" class="modal-header">
+                </div>
+                <div id="modalBody" class="modal-body">
+                </div>
+                <div id="modalFooter" class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Carrello</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="cart" class="offcanvas-body d-flex">            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/JS/index.js"></script>
+    <script src="./assets/JS/script.js"></script>
+</body>
+
+</html>

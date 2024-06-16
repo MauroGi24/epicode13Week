@@ -1,0 +1,62 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    border:none;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+button:hover{
+    background-color: #4D8BAB;
+}
+
+nav {
+    background-color: #e3f2fd;
+    box-shadow: 0px 0px 25px 3px grey;
+}
+
+nav img {
+    width: 5%;
+    margin-right: 1rem;
+
+}
+
+nav span {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px){
+    nav img {
+        display: none;
+    }
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px 0rem #4D8BAB
+}
+
+table img {
+    width: 10%;
+}
+
+#modalOverflow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.703);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    
+}
+
+#cart img{
+    width: 50%;
+}
